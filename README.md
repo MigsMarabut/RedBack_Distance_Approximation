@@ -38,6 +38,7 @@ We use the HuggingFace-hosted `Depth-Anything` pipeline, which returns a pixel-w
   *Boundary Detection*
 
 - ![image](https://github.com/user-attachments/assets/97000b8b-ea36-4861-8780-33069dd68f4a)
+  
   *Estimated depth*
 
 - ![image](https://github.com/user-attachments/assets/a4cd78a4-9bef-40ac-97c3-66fc1848f3d8)
