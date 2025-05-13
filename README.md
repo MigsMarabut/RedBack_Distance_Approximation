@@ -1,4 +1,4 @@
-# Depth Estimation and Distance Approximation using Computer Vision
+![image](https://github.com/user-attachments/assets/ba46a8a0-125c-4e82-8721-c82fc2088aa4)# Depth Estimation and Distance Approximation using Computer Vision
 
 ![Readme style: standard](https://img.shields.io/badge/readme%20style-standard-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -33,7 +33,8 @@ We use the HuggingFace-hosted `Depth-Anything` pipeline, which returns a pixel-w
 
 ## Example Visualizations
 
-- ![Original](https://diode-dataset.org/img/example.jpg)  
+- ![Original](https://diode-dataset.org/img/example.jpg)  ![Uploading image.png…]()
+
   *Sample input image*
 
 - ![Depth Map Output](https://i.ibb.co/2ZQ5Wqd/depth-map-example.png)  
