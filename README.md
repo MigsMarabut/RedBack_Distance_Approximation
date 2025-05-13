@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ba46a8a0-125c-4e82-8721-c82fc2088aa4)# Depth Estimation and Distance Approximation using Computer Vision
+# Depth Estimation and Distance Approximation using Computer Vision
 
 ![Readme style: standard](https://img.shields.io/badge/readme%20style-standard-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -33,15 +33,20 @@ We use the HuggingFace-hosted `Depth-Anything` pipeline, which returns a pixel-w
 
 ## Example Visualizations
 
-- ![Original](https://diode-dataset.org/img/example.jpg)  ![Uploading image.png…]()
+- ![image](https://github.com/user-attachments/assets/ba46a8a0-125c-4e82-8721-c82fc2088aa4)
 
-  *Sample input image*
+  *Boundary Detection*
 
-- ![Depth Map Output](https://i.ibb.co/2ZQ5Wqd/depth-map-example.png)  
+- ![image](https://github.com/user-attachments/assets/97000b8b-ea36-4861-8780-33069dd68f4a)
   *Estimated depth*
 
-- ![Annotated Output](https://i.ibb.co/qjbD0Yh/annotated-example.png)  
+- ![image](https://github.com/user-attachments/assets/a4cd78a4-9bef-40ac-97c3-66fc1848f3d8)
+
   *Detected objects with danger zones visualized*
+- ![image](https://github.com/user-attachments/assets/d5a33d6b-c597-448d-b693-5db3c3a66e3c)
+
+  *Global danger level: MID  | worst direction: LEFT  | min depth: 1.76 m*
+
 
 > Note: The above images are placeholders. Replace with your outputs if hosting images in GitHub or Imgur.
 
