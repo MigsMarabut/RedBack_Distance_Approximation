@@ -48,16 +48,75 @@ We use the HuggingFace-hosted `Depth-Anything` pipeline, which returns a pixel-w
   *Global danger level: MID  | worst direction: LEFT  | min depth: 1.76 m*
 
 
-> Note: The above images are placeholders. Replace with your outputs if hosting images in GitHub or Imgur.
+## Requirements
 
-## Code Flow Summary
+Install the required packages using:
 
-```python
-# Load image and estimate depth
-image = Image.open("test1.jpg")
-depth = pipe(image)["depth"]
+```bash
+pip install onnxruntime opencv-python numpy matplotlib pillow inference supervision transformers torch
+```
 
-# Use Roboflow inference model to get detections
-results = model.infer(image)
+Or manually ensure you have the following installed:
 
-# Visualize depth-based brackets and annotate danger zones
+- `onnxruntime`
+- `opencv-python`
+- `numpy`
+- `matplotlib`
+- `Pillow`
+- `inference`
+- `supervision`
+- `transformers`
+- `torch`
+
+## Future Work
+
+- **Real-time Video Integration**: Extend the pipeline to work on video input with consistent frame-by-frame inference.
+- **Dynamic Thresholding**: Improve the bracket logic with adaptive thresholds based on context or object type.
+- **Calibration**: Add support for intrinsic camera calibration to convert depth into real-world distances more accurately.
+
+## Known Limitations
+
+- Depth predictions are relative and not in absolute units.
+- Current system does not compensate for camera field of view or lens distortion.
+- Environmental lighting and image quality affect depth accuracy.
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. **Fork the repository.**
+2. **Create a new branch:**
+
+   ```bash
+   git checkout -b feature-branch
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```bash
+   git commit -m 'Add new feature'
+   ```
+
+4. **Push to the branch:**
+
+   ```bash
+   git push origin feature-branch
+   ```
+
+5. **Open a pull request.**
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contributor
+
+- [Miguel Marabut](https://github.com/MigsMarabut)
+
+## Acknowledgements
+
+- **OpenCV and Computer Vision Communities**: For their extensive work in computer vision and object detection.
+- **HuggingFace & Depth Anything**: For making state-of-the-art models easily accessible.
+- **Roboflow**: For providing a clean and easy-to-use object detection model interface.
+- **DIODE Dataset**: Used as our primary source for static image testing.
+- **Researchers in Assistive Technology**: For inspiring practical real-world applications of computer vision tools.
